@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget id = "abstract_button" name = "AbstractButton" type="control">
+    <display_name>Abstract Button</display_name>
+    <description>Refers to the Abstract Button interactive element</description>
+    <version createDate="2014-03-24T17:09:17.402+01:00" modifDate="2014-03-24T17:09:17.402+01:00" xmlns="">1</version>
+    <availability>
+        <profile id="profile_1" name="profile-1">
+            <platform id="platform_1" name="dekstop-platform">
+                <!--<software_platform name="jre-SE" ver="&gt;=1.5" />-->
+                <software_platform name="jre-SE" ver="&gt;=1.5" />
+            </platform>
+        </profile>
+    </availability>
+    
+    <!-- Abstract Properties -->
+    <abstract_properties>
+        <property id="abs_prop_1" name="text" type="string" isPrimitive="true"/>
+    </abstract_properties>
+
+    <!-- Polymorphic Instances -->
+    <instances>
+        <!-- java-swing-JButton: native -->
+        <instance id="abstract_button_inst_1" name="SwingRectangleButton" classId="inst_1_cl_1" interactionStyle="direct_manipulation" isNative="true" profileId="profile_1" >
+            <display_name>Swing Rectangle Button</display_name>
+            <dependencies/>
+            <containment/>
+            <abstract_properties_type_bindings/>
+            <polymorphic_properties>
+                <property id="inst_1_prop_1" name="icon" type="ImageIcon">
+                    <property id="inst_1_prop_2" name="iconPath" type="string" isPrimitive="true"/>
+                </property>
+                <property id="inst_1_prop_3" name="model" type="DefaultButtonModel">
+                    <property id="inst_1_prop_4" name="pressed" type="boolean" isPrimitive="true"/>
+                </property>
+            </polymorphic_properties>
+            <supported_behaviors/>
+            <mappings>
+                <mapping id="inst_1_mapping_1">
+                    <mappingProperty id="abs_prop_1" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_1_constructor_1"/>
+                        <utilized in="method" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_1_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_1" partId="inst_1_cl_1_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_2">
+                    <mappingProperty id="inst_1_prop_1" classId="inst_1_cl_2" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_1_method_3"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_1" partId="inst_1_cl_1_method_4"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_3">
+                    <mappingProperty id="inst_1_prop_2" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_2" partId="inst_1_cl_2_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_4">
+                    <mappingProperty id="inst_1_prop_3" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_3_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_1" partId="inst_1_cl_3_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_5">
+                    <mappingProperty id="inst_1_prop_4" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_1_cl_3" partId="inst_1_cl_3_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_3" partId="inst_1_cl_3_method_2"/>
+                    </mappingProperty>
+                </mapping>
+            </mappings>
+            <instance_api>
+                <class id="inst_1_cl_1" name="JButton" path="javax.swing.JButton" isNative="true">
+                    <constructor id="inst_1_cl_1_constructor_0" isDefault="true"/>
+                    <constructor id="inst_1_cl_1_constructor_1">
+                        <argument name="text" type="String" />
+                    </constructor>
+                    <constructor id="inst_1_cl_1_constructor_2">
+                        <argument name="icon" type="ImageIcon" />
+                    </constructor>
+                    <method id="inst_1_cl_1_method_1" name="setText" type="mutator" returnType="void">
+                        <argument name="text" type="String" />
+                    </method>
+                    <method id="inst_1_cl_1_method_2" name="getText" type="accessor" returnType="String"/>
+                    <method id="inst_1_cl_1_method_3" name="setIcon" returnType="void">
+                        <argument name="icon" type="ImageIcon"/>
+                    </method>
+                    <method id="inst_1_cl_1_method_4" name="getIcon" returnType="ImageIcon"/>
+                    <method id="inst_1_cl_1_method_5" name="setModel" returnType="void">
+                        <argument name="model" type="DefaultButtonModel"/>
+                    </method>
+                    <method id="inst_1_cl_1_method_6" name="getModel" returnType="DefaultButtonModel"/>
+                </class>
+                <class id="inst_1_cl_2" name="ImageIcon" path="javax.swing.ImageIcon" isNative="true">
+                    <constructor id="inst_1_cl_2_constructor_0"/>
+                    <constructor id="inst_1_cl_2_constructor_1" isDefault="true">
+                        <argument name="iconPath" type="String"/>
+                    </constructor>
+                </class>
+                <class id="inst_1_cl_3" name="DefaultButtonModel" path="javax.swing.DefaultButtonModel" isAbstract="true" isNative="true">
+                    <method id="inst_1_cl_3_method_1" name="setPressed" type="mutator" returnType="void">
+                        <argument name="pressed" type="boolean" />
+                    </method>
+                    <method id="inst_1_cl_3_method_2" name="isPressed" type="accessor" returnType="boolean"/>
+                </class>
+                  
+            </instance_api>
+        </instance>
+        <instance id="abstract_button_inst_2" name="SwingRoundButton" classId="inst_2_cl_1" interactionStyle="direct_manipulation" isSocialAware="true" isNative="false" profileId="profile_1" >
+            <display_name>Swing Round Button</display_name>
+            <dependencies>
+                <software_library ver = "1.0" url = "/AbstractButton/dependencies/SwingRoundButton/Software/RoundButton.jar"/>
+            </dependencies>
+            <containment/>
+            <abstract_properties_type_bindings/>
+            <polymorphic_properties>
+                <property id="inst_2_prop_1" name="icon" type="ImageIcon">
+                    <property id="inst_2_prop_2" name="iconPath" type="string" isPrimitive="true"/>
+                </property>
+                <property id="inst_2_prop_10" name="model" type="DefaultButtonModel">
+                    <property id="inst_2_prop_11" name="pressed" type="boolean" isPrimitive="true"/>
+                </property>
+				<property id="inst_2_prop_20" name="radius" type="int" isPrimitive="true"/>
+            </polymorphic_properties>
+            <mappings>
+                <mapping id="inst_2_mapping_1">
+                    <mappingProperty id="abs_prop_1" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_constructor_1"/>
+                        <utilized in="method" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_1" partId="inst_2_cl_1_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_2">
+                    <mappingProperty id="inst_2_prop_1" classId="inst_2_cl_2" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_constructor_2"/>
+                        <utilized in="method" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_method_3"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_1" partId="inst_2_cl_1_method_4"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_3">
+                    <mappingProperty id="inst_2_prop_2" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_2" partId="inst_2_cl_2_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_10">
+                    <mappingProperty id="inst_2_prop_10" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_method_7"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_1" partId="inst_2_cl_1_method_8"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_11">
+                    <mappingProperty id="inst_2_prop_11" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_2_cl_3" partId="inst_2_cl_3_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_3" partId="inst_2_cl_3_method_2"/>
+                    </mappingProperty>
+                </mapping>
+				<mapping id="inst_2_mapping_20">
+                    <mappingProperty id="inst_2_prop_20" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_method_20"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_1" partId="inst_2_cl_1_method_21"/>
+                    </mappingProperty>
+                </mapping>
+            </mappings>
+            <instance_api>
+                <class id="inst_2_cl_1" name="RoundButton" path="gr.rb.RoundButton" isNative="false">
+                    <constructor id="inst_2_cl_1_constructor_0" isDefault="true"/>
+                    <constructor id="inst_2_cl_1_constructor_1">
+                        <argument name="text" type="String" />
+                    </constructor>
+                    <constructor id="inst_2_cl_1_constructor_2">
+                        <argument name="icon" type="ImageIcon" />
+                    </constructor>
+                    <method id="inst_2_cl_1_method_1" name="setText" type="mutator" returnType="void">
+                        <argument name="text" type="String"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_2" name="getText" type="accessor" returnType="String"/>
+                    <method id="inst_2_cl_1_method_3" name="setIcon" type="mutator" returnType="void">
+                        <argument name="icon" type="ImageIcon"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_4" name="getIcon" type="accessor" returnType="ImageIcon"/>
+                    <method id="inst_2_cl_1_method_7" name="setModel" returnType="void">
+                        <argument name="model" type="DefaultButtonModel"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_8" name="getModel" returnType="DefaultButtonModel"/>					
+					<method id="inst_2_cl_1_method_20" name="setRadius" type="mutator" returnType="void">
+                        <argument name="radius" type="int"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_21" name="getRadius" type="accessor" returnType="int"/>
+                </class>
+                <class id="inst_2_cl_2" name="ImageIcon" path="javax.swing.ImageIcon" isNative="true">
+                    <constructor id="inst_2_cl_2_constructor_0" isDefault="true"/>
+                    <constructor id="inst_2_cl_2_constructor_1">
+                        <argument name="iconPath" type="String"/>
+                    </constructor>
+                </class>
+                <!-- -->
+                <class id="inst_2_cl_3" name="DefaultButtonModel" path="javax.swing.DefaultButtonModel" isNative="true">
+                    <method id="inst_2_cl_3_method_1" name="setPressed" type="mutator" returnType="void">
+                        <argument name="pressed" type="boolean" />
+                    </method>
+                    <method id="inst_2_cl_3_method_2" name="isPressed" type="accessor" returnType="boolean"/>
+                </class>
+            </instance_api>
+        </instance>
+    </instances>
+</widget>

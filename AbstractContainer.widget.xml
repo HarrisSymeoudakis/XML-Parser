@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget id="abstract_container" name="AbstractContainer" type="container">
+    <display_name>Abstract Container</display_name>
+    <description>Refers to the Abstract Container element</description>
+    <version createDate="2004-03-24T17:09:17.402+01:00" modifDate="2004-03-24T17:09:17.402+01:00" xmlns="">1</version>
+    <availability>
+        <profile id="profile_1" name="profile-1">
+            <platform id="platform_1" name="dekstop-platform">
+                <software_platform name="jre-SE" ver="&gt;=1.5"/>
+            </platform>
+        </profile>
+    </availability>
+    <!-- Abstract Properties -->
+    <abstract_properties/>
+    <!-- Polymorphic Instances -->
+    <instances>
+        <instance id="abstract_container_inst_1" name="SwingWindow" isTopLevel="true" classId="inst_1_cl_1" interactionStyle="direct_manipulation" isNative="true" profileId="profile_1" >
+            <display_name>Swing Window</display_name>
+            <dependencies/>
+            <containment>
+                <containmentProperty id="inst_1_prop_4"/>
+            </containment>
+            <abstract_properties_type_bindings/>
+            <polymorphic_properties>
+                <property id="inst_1_prop_1" name="title" type="string" isPrimitive="true"/>
+                <property id="inst_1_prop_2" name="defaultCloseOperation" type="int" isPrimitive="true">
+                    <option id="option_1" value="0">DO NOTHING ON CLOSE</option>
+                    <option id="option_2" value="1">HIDE ON CLOSE</option>
+                    <option id="option_3" value="2">DISPOSE ON CLOSE</option>
+                    <option id="option_4" value="3">EXIT ON CLOSE</option>
+                </property>
+                <property id="inst_1_prop_3" name="contentPane" type="Container" implicitlyInstantiated="true">
+                    <property id="inst_1_prop_4" name="component" type="Component"/>
+                    <property id="inst_1_prop_5" name="componentIndex" type="int"/>
+                    <property id="inst_1_prop_6" name="components" type="Component" structure="array" isPrimitive="false" implicitlyInstantiated="true"/>
+                    <property id="inst_1_prop_7" name="backgroundColor" type="Color">				
+                        <property id="inst_1_prop_8" name="red" type="int" isPrimitive="true"/>
+                        <property id="inst_1_prop_9" name="green" type="int" isPrimitive="true"/>
+                        <property id="inst_1_prop_10" name="blue" type="int" isPrimitive="true"/>
+                    </property>
+                    <property id="inst_1_prop_11" name="foregroundColor" type="Color">			
+                        <property id="inst_1_prop_12" name="red" type="int" isPrimitive="true"/>
+                        <property id="inst_1_prop_13" name="green" type="int" isPrimitive="true"/>
+                        <property id="inst_1_prop_14" name="blue" type="int" isPrimitive="true"/>
+                    </property>
+                </property>
+                <property id="inst_1_prop_15" name="backgroundColor" type="Color">
+                    <property id="inst_1_prop_16" name="red" type="int" isPrimitive="true"/>
+                    <property id="inst_1_prop_17" name="green" type="int" isPrimitive="true"/>
+                    <property id="inst_1_prop_18" name="blue" type="int" isPrimitive="true"/>
+                </property>
+                <property id="inst_1_prop_19" name="foregroundColor" type="Color">
+                    <property id="inst_1_prop_20" name="red" type="int" isPrimitive="true"/>
+                    <property id="inst_1_prop_21" name="green" type="int" isPrimitive="true"/>
+                    <property id="inst_1_prop_22" name="blue" type="int" isPrimitive="true"/>
+                </property>
+            </polymorphic_properties>
+            <mappings>
+                <mapping id="inst_1_mapping_1">
+                    <mappingProperty id="inst_1_prop_1" isMandatory="true">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_1_constructor_2"/>
+                        <utilized in="method" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_1_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_1" partId="inst_1_cl_1_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_2">
+                    <mappingProperty id="inst_1_prop_2" isMandatory="false">
+                        <hasOption optionId="option_1" classId="inst_1_cl_1" partId="inst_1_cl_1_field_1"/>
+                        <hasOption optionId="option_2" classId="inst_1_cl_1" partId="inst_1_cl_1_field_2"/>
+                        <hasOption optionId="option_3" classId="inst_1_cl_1" partId="inst_1_cl_1_field_3"/>
+                        <hasOption optionId="option_4" classId="inst_1_cl_1" partId="inst_1_cl_1_field_4"/>
+                        <utilized in="method" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_1_method_3"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_1" partId="inst_1_cl_1_method_4"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_3">
+                    <mappingProperty id="inst_1_prop_3" classId="inst_1_cl_2" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_1_cl_1" partId="inst_1_cl_1_method_5"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_1" partId="inst_1_cl_1_method_6"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_4">
+                    <mappingProperty id="inst_1_prop_4" classId="inst_1_cl_3" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_1_cl_2" partId="inst_1_cl_2_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_2" partId="inst_1_cl_2_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_5">
+                    <mappingProperty id="inst_1_prop_5" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_1_cl_2" partId="inst_1_cl_2_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_6">
+                    <mappingProperty id="inst_1_prop_7" classId="inst_1_cl_4" isMandatory="false">
+                        <hasOption optionId="option_1" classId="inst_1_cl_4" partId="inst_1_cl_4_field_1"/>
+                        <hasOption optionId="option_2" classId="inst_1_cl_4" partId="inst_1_cl_4_field_2"/>
+                        <utilized in="method" asType="argument" classId="inst_1_cl_2" partId="inst_1_cl_2_method_3"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_2" partId="inst_1_cl_2_method_4"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_7">
+                    <mappingProperty id="inst_1_prop_8" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_8">
+                    <mappingProperty id="inst_1_prop_9" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_9">
+                    <mappingProperty id="inst_1_prop_10" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_10">
+                    <mappingProperty id="inst_1_prop_11" classId="inst_1_cl_4" isMandatory="false">
+                        <hasOption optionId="option_1" classId="inst_1_cl_4" partId="inst_1_cl_4_field_1"/>
+                        <hasOption optionId="option_2" classId="inst_1_cl_4" partId="inst_1_cl_4_field_2"/>
+                        <utilized in="method" asType="argument" classId="inst_1_cl_2" partId="inst_1_cl_2_method_5"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_2" partId="inst_1_cl_2_method_6"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_11">
+                    <mappingProperty id="inst_1_prop_12" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_12">
+                    <mappingProperty id="inst_1_prop_13" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_13">
+                    <mappingProperty id="inst_1_prop_14" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_14">
+                    <mappingProperty id="inst_1_prop_15" classId="inst_1_cl_4" isMandatory="false">
+                        <binding fromType="string" toType="Color" in="method" classId="inst_1_cl_10" partId="inst_1_cl_10_method_1"/>
+                        <binding fromType="Color" toType="string" in="method" classId="inst_1_cl_10" partId="inst_1_cl_10_method_2"/>
+                        <hasOption optionId="option_1" classId="inst_1_cl_4" partId="inst_1_cl_4_field_1"/>
+                        <hasOption optionId="option_2" classId="inst_1_cl_4" partId="inst_1_cl_4_field_2"/>
+                        <utilized in="method" asType="argument" classId="inst_1_cl_2" partId="inst_1_cl_2_method_3"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_2" partId="inst_1_cl_2_method_4"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_15">
+                    <mappingProperty id="inst_1_prop_16" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_16">
+                    <mappingProperty id="inst_1_prop_17" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_17">
+                    <mappingProperty id="inst_1_prop_18" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_18">
+                    <mappingProperty id="inst_1_prop_19" classId="inst_1_cl_4" isMandatory="false">
+                        <binding fromType="string" toType="Color" in="method" classId="inst_1_cl_10" partId="inst_1_cl_10_method_1"/>
+                        <binding fromType="Color" toType="string" in="method" classId="inst_1_cl_10" partId="inst_1_cl_10_method_2"/>
+                        <hasOption optionId="option_1" classId="inst_1_cl_4" partId="inst_1_cl_4_field_1"/>
+                        <hasOption optionId="option_2" classId="inst_1_cl_4" partId="inst_1_cl_4_field_2"/>
+                        <utilized in="method" asType="argument" classId="inst_1_cl_2" partId="inst_1_cl_2_method_5"/>
+                        <utilized in="method" asType="return" classId="inst_1_cl_2" partId="inst_1_cl_2_method_6"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_19">
+                    <mappingProperty id="inst_1_prop_20" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_20">
+                    <mappingProperty id="inst_1_prop_21" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_1_mapping_21">
+                    <mappingProperty id="inst_1_prop_22" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_1_cl_4" partId="inst_1_cl_4_constructor_1"/>
+                    </mappingProperty>
+                </mapping>				
+            </mappings>
+            <instance_api>
+                <class id="inst_1_cl_1" name="JFrame" path="javax.swing.JFrame" isNative="true">
+                    <field id="inst_1_cl_1_field_1" name="DO_NOTHING_ON_CLOSE" type="int"/>
+                    <field id="inst_1_cl_1_field_2" name="HIDE_ON_CLOSE" type="int"/>
+                    <field id="inst_1_cl_1_field_3" name="DISPOSE_ON_CLOSE" type="int"/>
+                    <field id="inst_1_cl_1_field_4" name="EXIT_ON_CLOSE" type="int"/>
+                    <constructor id="inst_1_cl_1_constructor_1" isDefault="true"/>
+                    <constructor id="inst_1_cl_1_constructor_2" >
+                        <argument name="title" type="String"/>
+                    </constructor>
+                    <method id="inst_1_cl_1_method_1" name="setTitle" type="mutator" returnType="void">
+                        <argument name="title" type="string"/>
+                    </method>
+                    <method id="inst_1_cl_1_method_2" name="getTitle" type="accessor" returnType="string"/>
+                    <method id="inst_1_cl_1_method_3" name="setDefaultCloseOperation" type="mutator" returnType="void">
+                        <argument name="operation" type="int"/>
+                    </method>
+                    <method id="inst_1_cl_1_method_4" name="getDefaultCloseOperation" type="accessor" returnType="int"/>
+                    <method id="inst_1_cl_1_method_5" name="setContentPane" type="mutator" returnType="void">
+                        <argument name="container" type="Container"/>
+                    </method>
+                    <method id="inst_1_cl_1_method_6" name="getContentPane" type="accessor" returnType="Container"/>
+                    <method id="inst_1_cl_1_method_7" name="setBackground" type="mutator" returnType="void">
+                        <argument name="color" type="Color"/>
+                    </method>
+                    <method id="inst_1_cl_1_method_8" name="getBackground" type="accessor" returnType="Color"/>
+                    <method id="inst_1_cl_1_method_9" name="setForeground" type="mutator" returnType="void">
+                        <argument name="color" type="Color"/>
+                    </method>
+                    <method id="inst_1_cl_1_method_10" name="getForeground" type="accessor" returnType="Color"/>
+                </class>
+                <class id="inst_1_cl_2" name="ContentPane" path="java.awt.Container" isNative="true">
+                    <constructor id="inst_1_cl_2_constructor_1" isDefault="true"/>
+                    <method id="inst_1_cl_2_method_1" name="add" type="adder" returnType="void">
+                        <argument name="component" type="Component"/>
+                    </method>
+                    <method id="inst_1_cl_2_method_2" name="getComponent" type="accessor" returnType="String">
+                        <argument name="componentIndex" type="int"/>
+                    </method>
+                    <method id="inst_1_cl_2_method_3" name="setBackground" type="mutator" returnType="void">
+                        <argument name="color" type="Color"/>
+                    </method>
+                    <method id="inst_1_cl_2_method_4" name="getBackground" type="accessor" returnType="Color"/>
+                    <method id="inst_1_cl_2_method_5" name="setForeground" type="mutator" returnType="void">
+                        <argument name="color" type="Color"/>
+                    </method>
+                    <method id="inst_1_cl_2_method_6" name="getForeground" type="accessor" returnType="Color"/>
+                </class>
+                <class id="inst_1_cl_3" name="Component" path="java.awt.Component" isAbstract="true" isNative="true"/>
+                <class id="inst_1_cl_4" name="Color" path="java.awt.Color" isNative="true">
+                    <field id="inst_1_cl_4_field_1" name="RED" type="Color"/>
+                    <field id="inst_1_cl_4_field_2" name="BLUE" type="Color"/>
+                    <constructor id="inst_1_cl_4_constructor_1" isDefault="true">
+                        <argument name="red" type="int"/>
+                        <argument name="green" type="int"/>
+                        <argument name="blue" type="int"/>
+                    </constructor>
+                </class>
+            </instance_api>
+        </instance>
+		<instance id="abstract_container_inst_2" name="SwingSimpleContainer" isTopLevel="false" classId="inst_2_cl_1" interactionStyle="direct_manipulation" isNative="true" profileId="profile_1" >
+            <display_name>Swing Simple Container</display_name>
+            <dependencies/>
+            <containment>
+                <containmentProperty id="inst_2_prop_1"/>
+            </containment>
+            <polymorphic_properties>
+                <property id="inst_2_prop_1" name="component" type="Component"/>
+                <property id="inst_2_prop_2" name="componentIndex" type="int"/>
+                <property id="inst_2_prop_3" name="backgroundColor" type="Color">
+                    <property id="inst_2_prop_4" name="red" type="int" isPrimitive="true"/>
+                    <property id="inst_2_prop_5" name="green" type="int" isPrimitive="true"/>
+                    <property id="inst_2_prop_6" name="blue" type="int" isPrimitive="true"/>
+                </property>
+                <property id="inst_2_prop_7" name="foregroundColor" type="Color">
+                    <property id="inst_2_prop_8" name="red" type="int" isPrimitive="true"/>
+                    <property id="inst_2_prop_9" name="green" type="int" isPrimitive="true"/>
+                    <property id="inst_2_prop_10" name="blue" type="int" isPrimitive="true"/>
+                </property>
+            </polymorphic_properties>
+            <mappings>
+                <mapping id="inst_2_mapping_1">
+                    <mappingProperty id="inst_2_prop_1" classId="inst_2_cl_2" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_method_1"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_1" partId="inst_2_cl_1_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_2">
+                    <mappingProperty id="inst_2_prop_2" isMandatory="false">
+                        <utilized in="method" asType="argument" classId="inst_2_cl_2" partId="inst_2_cl_1_method_2"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_3">
+                    <mappingProperty id="inst_2_prop_3" classId="inst_2_cl_3" isMandatory="false">
+                        <hasOption optionId="option_1" classId="inst_2_cl_3" partId="inst_2_cl_3_field_1"/>
+                        <hasOption optionId="option_2" classId="inst_2_cl_3" partId="inst_2_cl_3_field_2"/>
+                        <hasOption optionId="option_3" classId="inst_2_cl_3" partId="inst_2_cl_3_field_3"/>
+                        <utilized in="method" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_method_3"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_1" partId="inst_2_cl_1_method_4"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_4">
+                    <mappingProperty id="inst_2_prop_4" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_3" partId="inst_2_cl_3_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_5">
+                    <mappingProperty id="inst_2_prop_5" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_3" partId="inst_2_cl_3_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_6">
+                    <mappingProperty id="inst_2_prop_6" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_3" partId="inst_2_cl_3_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_7">
+                    <mappingProperty id="inst_2_prop_7" classId="inst_2_cl_3" isMandatory="false">
+                        <hasOption optionId="option_1" classId="inst_2_cl_3" partId="inst_2_cl_3_field_1"/>
+                        <hasOption optionId="option_2" classId="inst_2_cl_3" partId="inst_2_cl_3_field_2"/>
+                        <hasOption optionId="option_3" classId="inst_2_cl_3" partId="inst_2_cl_3_field_3"/>
+                        <utilized in="method" asType="argument" classId="inst_2_cl_1" partId="inst_2_cl_1_method_5"/>
+                        <utilized in="method" asType="return" classId="inst_2_cl_1" partId="inst_2_cl_1_method_6"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_8">
+                    <mappingProperty id="inst_2_prop_8" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_3" partId="inst_2_cl_3_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_9">
+                    <mappingProperty id="inst_2_prop_9" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_3" partId="inst_2_cl_3_constructor_1"/>
+                    </mappingProperty>
+                </mapping>
+                <mapping id="inst_2_mapping_10">
+                    <mappingProperty id="inst_2_prop_10" isMandatory="false">
+                        <utilized in="constructor" asType="argument" classId="inst_2_cl_3" partId="inst_2_cl_3_constructor_1"/>
+                    </mappingProperty>
+                </mapping> 
+            </mappings>
+            <instance_api>
+                <class id="inst_2_cl_1" name="Container" path="javax.swing.JPanel" isNative="true">
+                    <constructor id="inst_2_cl_1_constructor_1" isDefault="true"/>
+                    <method id="inst_2_cl_1_method_1" name="add" type="adder" returnType="void">
+                        <argument name="component" type="Component"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_2" name="getComponent" type="accessor" returnType="String">
+                        <argument name="componentIndex" type="int"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_3" name="setBackground" type="mutator" returnType="void">
+                        <argument name="color" type="Color"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_4" name="getBackground" type="accessor" returnType="Color"/>
+                    <method id="inst_2_cl_1_method_5" name="setForeground" type="mutator" returnType="void">
+                        <argument name="color" type="Color"/>
+                    </method>
+                    <method id="inst_2_cl_1_method_6" name="getForeground" type="accessor" returnType="Color"/>
+                </class>
+                <class id="inst_2_cl_2" name="Component" path="java.awt.Component" isAbstract="true" isNative="true"/>
+                <class id="inst_2_cl_3" name="Color" path="java.awt.Color" isNative="true">
+                    <field id="inst_2_cl_3_field_1" name="RED" type="Color"/>
+                    <field id="inst_2_cl_3_field_2" name="BLUE" type="Color"/>
+                    <field id="inst_2_cl_3_field_3" name="WHITE" type="Color"/>
+                    <constructor id="inst_2_cl_3_constructor_1" isDefault="true">
+                        <argument name="red" type="int"/>
+                        <argument name="green" type="int"/>
+                        <argument name="blue" type="int"/>
+                    </constructor>
+                </class>
+            </instance_api>
+        </instance>
+    </instances>
+</widget>

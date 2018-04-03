@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uiModel id="Test1" name="MyTestProject" creationDate="2015-05-15T19:25:34.562+03:00" schemaVersion="2.0" xmlns="http://www.istl.teicrete.gr">
+    <head>
+        <version modifDate="2015-12-15T19:25:34.562+03:00"/>
+        <authorName>Admin</authorName>
+        <comment>Test</comment>
+    </head>
+	<cuiModel name="cui-model">
+		<version modifDate="2015-12-15T19:25:34.562+03:00" xmlns="">7</version>
+		<authorName xmlns="">Admin</authorName>
+		<abstractContainer id="abstract_container_1" widgetId="abstract_container" >
+			<abstractContainer id="abstract_container_2" widgetId="abstract_container" >
+				<abstractContainer id="abstract_container_3" widgetId="abstract_container" >
+					<abstractButton id="abstract_button_1" widgetId="abstract_button"></abstractButton>
+					<abstractButton id="abstract_button_2" widgetId="abstract_button"></abstractButton>
+				</abstractContainer>
+				<abstractButton id="abstract_button_3" widgetId="abstract_button"></abstractButton>
+			</abstractContainer>
+		</abstractContainer>
+	</cuiModel>
+	<behaviour_model/>
+    <widgetResourceModel>
+		<widgetResource id="wdg_rsc_1" cioId="abstract_container_1" widgetId="abstract_container">
+			<instance id="wr_1_inst_1" wslInstId="abstract_container_inst_1" name="SwingWindow">
+				<property id="wr_1_prop_1" wslPropId="inst_1_prop_1" value="Frame Title" />
+				<property id="wr_1_prop_2" wslPropId="inst_1_prop_2" value="2"/>
+			</instance>
+		</widgetResource>
+		<widgetResource id="wdg_rsc_2" cioId="abstract_container_2" widgetId="abstract_container">
+			<instance id="wr_2_inst_1" wslInstId="abstract_container_inst_2" name="SwingSimpleContainer"/>
+		</widgetResource>
+		<widgetResource id="wdg_rsc_3" cioId="abstract_container_3" widgetId="abstract_container">
+			<instance id="wr_3_inst_1" wslInstId="abstract_container_inst_2" name="SwingSimpleContainer"/>
+		</widgetResource>
+		<widgetResource id="wdg_rsc_4" cioId="abstract_button_1" widgetId="abstract_button">
+			<property id="abs_prop_1" value="Press 1" />
+			<instance id="wr_4_inst_1" wslInstId="abstract_button_inst_1" name="SwingRectangleButton"/>
+		</widgetResource>
+		<widgetResource id="wdg_rsc_5" cioId="abstract_button_2" widgetId="abstract_button">
+			<property id="abs_prop_1" value="Press 2" />
+			<instance id="wr_5_inst_2" wslInstId="abstract_button_inst_2" name="SwingRoundButton">
+				<property id="wr_5_prop_20" wslPropId="inst_2_prop_20" value="50"/>
+			</instance>
+		</widgetResource>
+		<widgetResource id="wdg_rsc_6" cioId="abstract_button_3" widgetId="abstract_button">
+			<property id="abs_prop_1" value="Press 3" />
+			<instance id="wr_6_inst_1" wslInstId="abstract_button_inst_1" name="SwingRectangleButton"/>
+		</widgetResource>
+	</widgetResourceModel>
+</uiModel>
